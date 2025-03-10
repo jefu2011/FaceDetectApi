@@ -16,7 +16,7 @@ namespace FaceDetectApi.Controllers
             return Ok(new { faceFileName = result});
         }
 
-        [HttpGet("{FileName}")]
+        [HttpGet("{fileName}")]
         public async Task<IActionResult> GetFaceResult([FromRoute]string fileName)
         {
             if (System.IO.File.Exists(fileName) is false)
