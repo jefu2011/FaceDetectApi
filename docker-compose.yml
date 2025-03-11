@@ -1,0 +1,6 @@
+services:
+  facedetectapi:
+    image: ${DOCKER_REGISTRY-}facedetectapi
+    build:
+      context: .
+      dockerfile: FaceDetectApi/Dockerfile

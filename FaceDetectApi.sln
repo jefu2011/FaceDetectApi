@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetectApi", "FaceDetectApi\FaceDetectApi.csproj", "{F1EFE5B1-E30F-4EF6-9D9F-3BB59EE21DD0}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{31E8F5F8-102D-4567-BEFF-6C28E5641701}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F1EFE5B1-E30F-4EF6-9D9F-3BB59EE21DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1EFE5B1-E30F-4EF6-9D9F-3BB59EE21DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1EFE5B1-E30F-4EF6-9D9F-3BB59EE21DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E8F5F8-102D-4567-BEFF-6C28E5641701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E8F5F8-102D-4567-BEFF-6C28E5641701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E8F5F8-102D-4567-BEFF-6C28E5641701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E8F5F8-102D-4567-BEFF-6C28E5641701}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
