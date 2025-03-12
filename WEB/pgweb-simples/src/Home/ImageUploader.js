@@ -19,12 +19,16 @@ export default function ImageUploader() {
     const formData = new FormData();
     formData.append("file", selectedFile);
 
+    
+
     try {
-      const response = await fetch("http://192.168.1.170/detect", {
-        method: "POST",
-        body: formData,
-      });
-      
+//        const response = await fetch("http://192.168.1.170:8080/detect", {
+        const response = await fetch("http://localhost:5219/api/faces/detect", {
+            method: "POST",
+            body: formData,
+          });
+          console.log("Arquivo selecionado:", selectedFile);
+          console.log("Resposta da API:", response);
       if (!response.ok) {
         throw new Error("Erro ao enviar imagem");
       }
@@ -44,7 +48,10 @@ export default function ImageUploader() {
 
   const fetchProcessedImage = async (fileName) => {
     try {
-      const imageUrl = `http://192.168.1.170/${fileName}`;
+//      const imageUrl = `http://192.168.1.170/${fileName}`;
+//      const imageUrl = `http://192.168.1.170:8080/${fileName}`;
+      const imageUrl = `http://localhost:5219/api/faces/detect${fileName}`;
+
       setProcessedImage(imageUrl);
     } catch (error) {
       alert("Erro ao obter imagem processada");
